@@ -1,0 +1,49 @@
+:root {
+  font-size: 14px;
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+
+  --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: 375px;
+  height: 2387px;
+  margin: auto;
+}
+
+.target {
+  display: block;
+  width: 326px;
+  height: 216px;
+  margin: auto;
+}
+
+.name {
+  font-weight: 700;
+  font-size: .8;
+}
