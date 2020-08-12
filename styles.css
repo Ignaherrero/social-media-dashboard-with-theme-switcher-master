@@ -8,12 +8,12 @@
   --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
   --YouTube: hsl(348, 97%, 39%);
 
-  --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
 }
 
 ul {
   list-style-type: none;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -41,9 +41,40 @@ body {
   width: 326px;
   height: 216px;
   margin: auto;
+  border-radius: 5px;
+  background-color: var(--Dark-Desaturated-Blue);
+  margin-bottom: 2rem;
 }
 
-.name {
+.user {
   font-weight: 700;
   font-size: .8;
+}
+
+li {
+  text-align: center;
+}
+
+li:nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+li:nth-child(2) {
+  font-size: 3.08rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+li:nth-child(3) {
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+li:nth-child(4) {
+  font-weight: 700;
+}
+
+.target:first-child {
+  border-top: 7px solid var(--Facebook);
 }
