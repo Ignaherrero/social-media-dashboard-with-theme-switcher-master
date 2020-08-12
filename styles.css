@@ -74,7 +74,3 @@ li:nth-child(3) {
 li:nth-child(4) {
   font-weight: 700;
 }
-
-.target:first-child {
-  border-top: 7px solid var(--Facebook);
-}
