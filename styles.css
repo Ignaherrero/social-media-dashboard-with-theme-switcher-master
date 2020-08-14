@@ -93,3 +93,42 @@ li:nth-child(4) {
   color: var(--White);
   font-weight: 700;
 }
+
+.attribution {
+  color: white;
+}
+
+.link {
+  display: inline-block;
+  padding: .3rem;
+  background-color: var(--Light-Grayish-Blue)
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: underline;
+}
+
+.link:link {
+  color: white;
+  border-radius: 5px;
+}
+
+.link:visited {
+  color: white;
+}
+
+.link:hover {
+  background: coral;
+  color: white;
+  border-radius: 5px;
+}
+
+.link:active {
+  transform: scale(.9);
+}
