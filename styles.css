@@ -88,16 +88,15 @@ li {
   text-align: center;
 }
 
-li:nth-child(2) {
+.user {
   color: var(--Desaturated-Blue);
-  margin-bottom: 2rem;
 }
 
-li:nth-child(3) {
+.total {
   color: var(--White);
   font-size: 3.08rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
 }
 
 .type {
@@ -112,19 +111,29 @@ li:nth-child(5) {
   font-weight: 700;
 }
 
-.resume {
+.group-user {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume,
+.group-user {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.green,
+.red {
+  font-weight: 700;
 }
 
 .green {
-  color: green;
+  color: var(--Lime-Green);
 }
 
 .red {
-  color: red
+  color: var(--Bright-Red);
 }
 
 .attribution {
