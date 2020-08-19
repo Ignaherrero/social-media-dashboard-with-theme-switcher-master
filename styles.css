@@ -61,6 +61,22 @@ span,
   margin-bottom: 2rem;
 }
 
+.min-target {
+  margin: auto;
+  border-radius: 5px;
+  background-color: var(--dark-desaturated-blue);
+  width: 326px;
+  height: 125px;
+  margin-bottom: 1rem;
+}
+
+.container-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .user {
   font-weight: 700;
   font-size: .8;
@@ -134,6 +150,20 @@ li:nth-child(5) {
 
 .red {
   color: var(--bright-red);
+}
+
+.dasboard-two-total {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 62.5px;
+}
+
+.dasboard-two-type {
+  font-size: .9rem;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  line-height: 62.5px;
 }
 
 .attribution {
