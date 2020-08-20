@@ -10,6 +10,7 @@
   --youTube: hsl(348, 97%, 39%);
 
   --very-dark-blue: hsl(230, 17%, 14%);
+  --very-dark-blue-top: hsl(232, 19%, 15%);
   --dark-desaturated-blue: hsl(228, 28%, 20%);
   --desaturated-blue: hsl(228, 34%, 66%);
   --white: hsl(0, 0%, 100%);
@@ -28,11 +29,23 @@ figure {
 
 figcaption {
   padding: 0;
+  position: relative;
+  z-index: 10;
 }
 
 body {
+  margin: 0;
   width: 100%;
   background-color: var(--very-dark-blue);
+}
+
+.background {
+  background-color: var(--very-dark-blue-top);
+  border-radius: 0rem 0rem 1.6rem 1.6rem;
+  height: 234px;
+  width: 375px;
+  position: absolute;
+  z-index: -1;
 }
 
 .container {
@@ -41,14 +54,39 @@ body {
   margin: auto;
 }
 
-.title {
-  color: var(--white);
+.title,
+.subtitle,
+.option-style-board {
+  width: 326px;
+  margin: auto;
 }
 
-span,
+.option-style-board {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.title {
+  padding-top: 2.85rem;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.text-option-mode,
 .subtitle {
-  color: var(--desaturated-blue);
+  font-size: .8rem;
   font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+/* span, */
+.subtitle {
+  margin-top: .8rem;
+  padding-bottom: 1.85rem;
+  border-bottom: 1px solid var(--dark-desaturated-blue);
 }
 
 .target {
