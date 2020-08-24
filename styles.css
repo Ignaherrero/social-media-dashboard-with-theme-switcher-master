@@ -59,9 +59,17 @@ body {
 
 .title,
 .subtitle,
+.overview,
 .option-style-board {
 	width: 326px;
 	margin: auto;
+}
+
+.overview {
+	margin-top: 3.78rem;
+	margin-bottom: 2rem;
+	color: white;
+
 }
 
 .option-style-board {
@@ -133,17 +141,16 @@ input:checked+.slider:before {
 .title {
 	padding-top: 2.85rem;
 	color: var(--white);
-	font-size: 1.2rem;
+	font-size: 1.7rem;
 }
 
 .text-option-mode,
 .subtitle {
-	font-size: .8rem;
+	font-size: 1.0rem;
 	font-weight: 700;
 	color: var(--desaturated-blue);
 }
 
-/* span, */
 .subtitle {
 	margin-top: .8rem;
 	padding-bottom: 1.85rem;
