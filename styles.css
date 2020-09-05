@@ -335,7 +335,6 @@ li:nth-child(5) {
 }
 
 @media only screen and (min-width:600px) {
-
    .container {
       width: 1200px;
       height: 800px;
@@ -343,8 +342,9 @@ li:nth-child(5) {
    }
 
    .background {
-      width: 100%;
+      width: 100vw;
       height: 245px;
+      left: 0;
    }
 
    .title,
@@ -352,11 +352,16 @@ li:nth-child(5) {
       width: 100%;
    }
 
+   .overview {
+      margin-top: 50px;
+   }
+
    .target {
       display: inline-block;
       width: 255px;
       height: 217px;
       margin-right: 29px;
+      margin-bottom: 0;
    }
 
    .min-target {
@@ -367,6 +372,13 @@ li:nth-child(5) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 49px;
+   }
+
+   .subtitle,
+   .option-style-board {
+      margin: 0;
+      padding: 0;
    }
 
    .dasboard-two {
