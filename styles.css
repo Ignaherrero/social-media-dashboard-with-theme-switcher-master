@@ -7,11 +7,18 @@
    --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
    --youTube: hsl(348, 97%, 39%);
 
+   /* dark theme */
    --very-dark-blue: hsl(230, 17%, 14%);
    --very-dark-blue-top: hsl(232, 19%, 15%);
    --dark-desaturated-blue: hsl(228, 28%, 20%);
    --desaturated-blue: hsl(228, 34%, 66%);
+
+   /* white theme */
    --white: hsl(0, 0%, 100%);
+   --very-pale-blue: hsl(225, 100%, 98%);
+   --light-grayish-blue: hsl(227, 47%, 96%);
+   --dark-grayish-blue: hsl(228, 12%, 44%);
+   --very-dark-blue: hsl(230, 17%, 14%);
 
    --toggle: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
    --toggle-background: hsl(230, 22%, 74%);
@@ -50,18 +57,26 @@ html {
 }
 
 /* Content */
-body {
+.body {
    width: 100%;
+   background-color: var(--white);
+}
+
+.body-dark {
    background-color: var(--very-dark-blue);
 }
 
 .background {
-   background-color: var(--very-dark-blue-top);
+   background-color: var(--very-pale-blue);
    border-radius: 0rem 0rem 1.6rem 1.6rem;
    height: 234px;
    width: 375px;
    position: absolute;
    z-index: -1;
+}
+
+.background-dark {
+   background-color: var(--very-dark-blue-top);
 }
 
 .container {
@@ -81,8 +96,11 @@ body {
 .overview {
    margin-top: 3.78rem;
    margin-bottom: 2rem;
-   color: white;
+   color: var(--dark-grayish-blue);
+}
 
+.overview-dark {
+   color: var(--white);
 }
 
 .option-style-board {
@@ -93,7 +111,7 @@ body {
    margin-bottom: 3.2rem;
 }
 
-.switch {
+/* .switch {
    position: relative;
    display: inline-block;
    width: 49px;
@@ -140,7 +158,7 @@ input:checked+.slider:before {
    -ms-transform: translateX(24px);
    transform: translateX(24px);
    background-color: white;
-}
+} */
 
 /* Rounded sliders */
 .slider.round {
@@ -153,14 +171,23 @@ input:checked+.slider:before {
 
 .title {
    padding-top: 2.85rem;
-   color: var(--white);
    font-size: 1.7rem;
+   color: var(--very-dark-blue);
+}
+
+.title-dark {
+   color: var(--white);
 }
 
 .text-option-mode,
 .subtitle {
    font-size: 1.0rem;
    font-weight: 700;
+   color: var(--dark-grayish-blue);
+}
+
+.text-option-mode-dark,
+.subtitle-dark {
    color: var(--desaturated-blue);
 }
 
@@ -176,17 +203,25 @@ input:checked+.slider:before {
    height: 216px;
    margin: auto;
    border-radius: 5px;
-   background-color: var(--dark-desaturated-blue);
    margin-bottom: 2rem;
+   background-color: var(--light-grayish-blue);
+}
+
+.target-dark {
+   background-color: var(--dark-desaturated-blue);
 }
 
 .min-target {
    margin: auto;
    border-radius: 5px;
-   background-color: var(--dark-desaturated-blue);
    width: 326px;
    height: 125px;
    margin-bottom: 1rem;
+   background-color: var(--light-grayish-blue);
+}
+
+.min-target-dark {
+   background-color: var(--dark-desaturated-blue);
 }
 
 .container-grid {
@@ -236,21 +271,33 @@ li {
 }
 
 .user {
+   color: var(--dark-grayish-blue);
+}
+
+.user-dark {
    color: var(--desaturated-blue);
 }
 
 .total {
-   color: var(--white);
    font-size: 3.08rem;
    font-weight: 700;
    margin-bottom: .8rem;
+   color: var(--very-dark-blue);
+}
+
+.total-dark {
+   color: var(--white);
 }
 
 .type {
-   color: var(--desaturated-blue);
    letter-spacing: .2rem;
    text-transform: uppercase;
    margin-bottom: 2rem;
+   color: var(--dark-grayish-blue);
+}
+
+.type-dark {
+   color: var(--desaturated-blue);
 }
 
 li:nth-child(5) {
@@ -284,15 +331,23 @@ li:nth-child(5) {
 }
 
 .dasboard-two-total {
-   color: var(--white);
    font-size: 1.5rem;
    font-weight: 700;
+   color: var(--very-dark-blue);
+}
+
+.dasboard-two-total-dark {
+   color: var(--white);
 }
 
 .dasboard-two-type {
    font-size: .9rem;
-   color: var(--desaturated-blue);
    font-weight: 700;
+   color: var(--dark-grayish-blue);
+}
+
+.dasboard-two-total {
+   color: var(--desaturated-blue);
 }
 
 .attribution {
@@ -336,7 +391,7 @@ li:nth-child(5) {
 
 @media only screen and (min-width:600px) {
    .container {
-      width: 1200px;
+      width: 1119px;
       height: 800px;
       margin: auto;
    }
@@ -364,6 +419,10 @@ li:nth-child(5) {
       margin-bottom: 0;
    }
 
+   .target:last-child {
+      margin: 0;
+   }
+
    .min-target {
       width: 254px;
    }
@@ -372,13 +431,25 @@ li:nth-child(5) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 49px;
+      margin-bottom: 60px;
    }
 
    .subtitle,
    .option-style-board {
       margin: 0;
       padding: 0;
+   }
+
+   .subtitle {
+      border: none;
+   }
+
+   .attribution {
+      text-align: center;
+   }
+
+   .option-style-board {
+      width: 140px;
    }
 
    .dasboard-two {
