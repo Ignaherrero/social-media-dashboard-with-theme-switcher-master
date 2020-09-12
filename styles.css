@@ -81,6 +81,7 @@ html {
 }
 
 .container,
+.title,
 .subtitle,
 .overview,
 .target,
@@ -123,6 +124,10 @@ html {
 .subtitle {
    margin-top: .8rem;
    padding-bottom: 1.85rem;
+   border-bottom: 1px solid var(--toggle-background);
+}
+
+.subtitle-dark {
    border-bottom: 1px solid var(--dark-desaturated-blue);
 }
 
@@ -231,6 +236,13 @@ input:checked+.slider {
    font-size: .8;
 }
 
+.user::before,
+.green::before,
+.red::before,
+.percent::before {
+   content: "\00a0";
+}
+
 .facebook {
    border-top: 5px solid var(--facebook);
 }
@@ -259,7 +271,7 @@ li {
 }
 
 .type {
-   letter-spacing: .2rem;
+   letter-spacing: .1rem;
    text-transform: uppercase;
    margin-bottom: 2rem;
 }
@@ -300,6 +312,7 @@ li:nth-child(5) {
 .green,
 .red {
    font-weight: 700;
+   font-size: .7rem;
 }
 
 .green {
