@@ -1,4 +1,4 @@
-const TARGETS = [...document.querySelectorAll('.target')];
+const CARDS = [...document.querySelectorAll('.card')];
 const TOTALS = [...document.querySelectorAll('.total')]
 const USERS = [...document.querySelectorAll('.user')];
 const TYPES = [...document.querySelectorAll('.type')];
@@ -9,12 +9,12 @@ const OVERVIEWS = [...document.querySelectorAll('.overview')];
 const TITLES = [...document.querySelectorAll('.title')];
 const TEXTOPTIONMODES = [...document.querySelectorAll('.text-option-mode')];
 const SUBTITLES = [...document.querySelectorAll('.subtitle')];
-const MINTARGETS = [...document.querySelectorAll('.min-target')];
+const MINTARGETS = [...document.querySelectorAll('.min-card')];
 const DASBOARDTWOTOTALS = [...document.querySelectorAll('.dasboard-two-total')];
 const DASBOARDTWOTYPES = [...document.querySelectorAll('.dasboard-two-type')];
 
 button.addEventListener('click', () => {
-   TARGETS.map((target) => target.classList.toggle('target-dark'))
+   CARDS.map((card) => card.classList.toggle('card-dark'))
    TOTALS.map((total) => total.classList.toggle('total-dark'));
    USERS.map((user) => user.classList.toggle('user-dark'));
    TYPES.map((type) => type.classList.toggle('type-dark'));
@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
    TITLES.map((title) => title.classList.toggle('title-dark'));
    TEXTOPTIONMODES.map((textoptionmode) => textoptionmode.classList.toggle('textoptionmode-dark'));
    SUBTITLES.map((subtitle) => subtitle.classList.toggle('subtitle-dark'));
-   MINTARGETS.map((mintarget) => mintarget.classList.toggle('min-target-dark'));
+   MINTARGETS.map((mintarget) => mintarget.classList.toggle('min-card-dark'));
    DASBOARDTWOTOTALS.map((dasboardtwototal) => dasboardtwototal.classList.toggle('dasboard-two-total-dark'));
    DASBOARDTWOTYPES.map((dasboardtwotype) => dasboardtwotype.classList.toggle('dasboard-two-type-dark'));
 });
